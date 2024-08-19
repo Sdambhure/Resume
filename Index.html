@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreeniwas Ambhure - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 0.5em 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2em 0;
+        }
+
+        .content {
+            background: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 2em;
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Image styling */
+        .img {
+            text-align: center; /* Center the image container */
+            margin: 2em 0;
+        }
+
+        .img img {
+            max-width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+            width: 200px; /* Set a default width */
+            
+            /* You can change the width value to resize the image */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shreeniwas Ambhure</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#social">Social Sites</a></li>
+        </ul>
+    </nav>
+
+    <div class="container" id="home">
+        <div class="content">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I am Shreeniwas Ambhure. Welcome to my personal website. Here you will find information about my background, interests, and projects. Feel free to explore and get in touch if you have any questions.</p>
+            <p>This website is created using simple HTML and CSS to give you a brief introduction to my work and interests.</p>
+        </div>
+
+        <div class="img">
+            <img src="/My Passport pic.jpg" alt="Shreeniwas Photo">
+        </div>
+
+        <section id="projects">
+            <div class="content">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I have worked on:</p>
+                <ul>
+                    <li>SBI Bank Management Project</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="content">
+                <h2>Resume</h2>
+                <p>Download my resume <a href="https://drive.google.com/file/d/1WFHxIIN3wgqfe5vnpzOKhEaCQpgKD557/view?usp=drive_link" target="_blank">here</a>.</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <div class="content">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Computer Application -Swami Ramanand Tirth Marathvada University, Nanded</li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <section id="social">
+            <div class="content">
+                <h2>Social Sites</h2>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/shreeniwas-ambhure-395982322" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/sdambhure" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content">
+                <h2>Contact Me</h2>
+                <p>If you would like to get in touch, please reach out to me via:</p>
+                <ul>
+                    <li>Email: sdambhure2002@gmail.com</li>
+                    <li>Phone: +91 9067757537</li>
+                </ul>
+                <h2>Send a Message</h2>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                    
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shreeniwas Ambhure. All rights reserved.</p>
+    </footer>
+</body>
+</html>
